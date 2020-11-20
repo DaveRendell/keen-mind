@@ -230,6 +230,54 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/components/MainPage.tsx":
+/*!*************************************!*\
+  !*** ./src/components/MainPage.tsx ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar SearchArea_1 = __webpack_require__(/*! ./SearchArea */ \"./src/components/SearchArea.tsx\");\nfunction default_1() {\n    return (React.createElement(\"div\", null,\n        React.createElement(\"h1\", null, \"Keen Mind\"),\n        React.createElement(SearchArea_1.default, null)));\n}\nexports.default = default_1;\n\n\n//# sourceURL=webpack:///./src/components/MainPage.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/SearchArea.tsx":
+/*!***************************************!*\
+  !*** ./src/components/SearchArea.tsx ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar SearchBar_1 = __webpack_require__(/*! ./SearchBar */ \"./src/components/SearchBar.tsx\");\nvar SearchResults_1 = __webpack_require__(/*! ./SearchResults */ \"./src/components/SearchResults.tsx\");\nfunction SearchArea() {\n    var _a = React.useState(\"\"), query = _a[0], setQuery = _a[1];\n    return (React.createElement(\"div\", { className: \"search-area\" },\n        React.createElement(SearchBar_1.default, { query: query, setQuery: setQuery }),\n        React.createElement(SearchResults_1.default, { query: query })));\n}\nexports.default = SearchArea;\n\n\n//# sourceURL=webpack:///./src/components/SearchArea.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/SearchBar.tsx":
+/*!**************************************!*\
+  !*** ./src/components/SearchBar.tsx ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction default_1(_a) {\n    var query = _a.query, setQuery = _a.setQuery;\n    return (React.createElement(\"div\", { className: \"search-bar\" },\n        React.createElement(\"input\", { value: query, onChange: function (e) { return setQuery(e.target.value); } })));\n}\nexports.default = default_1;\n\n\n//# sourceURL=webpack:///./src/components/SearchBar.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/SearchResults.tsx":
+/*!******************************************!*\
+  !*** ./src/components/SearchResults.tsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction default_1(_a) {\n    var query = _a.query;\n    return (React.createElement(\"div\", { className: \"search-results\" }, query));\n}\nexports.default = default_1;\n\n\n//# sourceURL=webpack:///./src/components/SearchResults.tsx?");
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -238,7 +286,7 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n__webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\nReactDOM.render(React.createElement(\"h1\", null, \"Hello, World!\"), document.getElementById(\"output\"));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n__webpack_require__(/*! ./main.scss */ \"./src/main.scss\");\nvar MainPage_1 = __webpack_require__(/*! ./components/MainPage */ \"./src/components/MainPage.tsx\");\nReactDOM.render(React.createElement(MainPage_1.default, null), document.getElementById(\"output\"));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
 
 /***/ }),
 
