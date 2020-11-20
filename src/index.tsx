@@ -1,8 +1,9 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 import "./main.scss"
+import MainPage from "./components/MainPage"
 
 ReactDOM.render(
-  <h1>Hello, World!</h1>,
+  <MainPage />,
   document.getElementById("output")
 )
