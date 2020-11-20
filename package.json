@@ -1,0 +1,20 @@
+{
+  "name": "keen-mind",
+  "version": "1.0.0",
+  "description": "Lightning quick reference for Dungeons &amp; Dragons 5th edition SRD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveRendell/keen-mind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaveRendell/keen-mind/issues"
+  },
+  "homepage": "https://github.com/DaveRendell/keen-mind#readme"
+}
