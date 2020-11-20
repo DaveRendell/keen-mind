@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/DaveRendell/keen-mind/issues"
   },
-  "homepage": "https://github.com/DaveRendell/keen-mind#readme"
+  "homepage": "https://github.com/DaveRendell/keen-mind#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
