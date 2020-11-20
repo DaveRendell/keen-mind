@@ -6,7 +6,7 @@ module.exports = {
   target: "web",
   mode: "development",
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
   resolve: {
@@ -17,6 +17,17 @@ module.exports = {
       {
         test: /\.(ts|tsx)$/,
         loader: "awesome-typescript-loader",
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
       },
       {
         enforce: "pre",
