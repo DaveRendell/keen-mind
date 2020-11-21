@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/DaveRendell/keen-mind#readme",
   "dependencies": {
+    "fuse.js": "^6.4.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
