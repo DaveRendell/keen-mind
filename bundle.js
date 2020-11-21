@@ -1879,6 +1879,42 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Re
 
 /***/ }),
 
+/***/ "./src/content/conditions/blinded.md":
+/*!*******************************************!*\
+  !*** ./src/content/conditions/blinded.md ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A blinded creature can't see and automatically fails any ability check that requires sight.\\n* Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/blinded.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/charmed.md":
+/*!*******************************************!*\
+  !*** ./src/content/conditions/charmed.md ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A charmed creature can't attack the charmer or target the charmer with harmful abilities or magical effects.\\n* The charmer has advantage on any ability check to interact socially with the creature.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/charmed.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/deafened.md":
+/*!********************************************!*\
+  !*** ./src/content/conditions/deafened.md ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A deafened creature can't hear and automatically fails any ability check that requires hearing.\");\n\n//# sourceURL=webpack:///./src/content/conditions/deafened.md?");
+
+/***/ }),
+
 /***/ "./src/content/conditions/exhaustion.md":
 /*!**********************************************!*\
   !*** ./src/content/conditions/exhaustion.md ***!
@@ -1887,7 +1923,151 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Re
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.\\n\\n| Level | Effect                                         |\\n|-------|------------------------------------------------|\\n| 1     | Disadvantage on ability checks                 |\\n| 2     | Speed halved                                   |\\n| 3     | Disadvantage on attack rolls and saving throws |\\n| 4     | Hit point maximum halved                       |\\n| 5     | Speed reduced to 0                             |\\n| 6     | Death                                          |\\n\\nIf an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.\\n\\nA creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks.\\n\\nAn effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.\\n\\nFinishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink.\");\n\n//# sourceURL=webpack:///./src/content/conditions/exhaustion.md?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Some special abilities and environmental hazards, such as starvation and the long-term effects of freezing or scorching temperatures, can lead to a special condition called exhaustion. Exhaustion is measured in six levels. An effect can give a creature one or more levels of exhaustion, as specified in the effect's description.\\n\\n| Level | Effect                                         |\\n|-------|------------------------------------------------|\\n| 1     | Disadvantage on ability checks                 |\\n| 2     | Speed halved                                   |\\n| 3     | Disadvantage on attack rolls and saving throws |\\n| 4     | Hit point maximum halved                       |\\n| 5     | Speed reduced to 0                             |\\n| 6     | Death                                          |\\n\\nIf an already exhausted creature suffers another effect that causes exhaustion, its current level of exhaustion increases by the amount specified in the effect's description.\\n\\nA creature suffers the effect of its current level of exhaustion as well as all lower levels. For example, a creature suffering level 2 exhaustion has its speed halved and has disadvantage on ability checks.\\n\\nAn effect that removes exhaustion reduces its level as specified in the effect's description, with all exhaustion effects ending if a creature's exhaustion level is reduced below 1.\\n\\nFinishing a long rest reduces a creature's exhaustion level by 1, provided that the creature has also ingested some food and drink.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/exhaustion.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/frightened.md":
+/*!**********************************************!*\
+  !*** ./src/content/conditions/frightened.md ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A frightened creature has disadvantage on ability checks and attack rolls while the source of its fear is within line of sight.\\n* The creature can't willingly move closer to the source of its fear.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/frightened.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/grappled.md":
+/*!********************************************!*\
+  !*** ./src/content/conditions/grappled.md ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.\\n* The condition ends if the grappler is incapacitated (see the condition).\\n* The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-wave* spell.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/grappled.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/incapacitated.md":
+/*!*************************************************!*\
+  !*** ./src/content/conditions/incapacitated.md ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* An incapacitated creature can't take actions or reactions.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/incapacitated.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/index.ts":
+/*!*****************************************!*\
+  !*** ./src/content/conditions/index.ts ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar blinded_md_1 = __webpack_require__(/*! ./blinded.md */ \"./src/content/conditions/blinded.md\");\nvar charmed_md_1 = __webpack_require__(/*! ./charmed.md */ \"./src/content/conditions/charmed.md\");\nvar deafened_md_1 = __webpack_require__(/*! ./deafened.md */ \"./src/content/conditions/deafened.md\");\nvar exhaustion_md_1 = __webpack_require__(/*! ./exhaustion.md */ \"./src/content/conditions/exhaustion.md\");\nvar frightened_md_1 = __webpack_require__(/*! ./frightened.md */ \"./src/content/conditions/frightened.md\");\nvar grappled_md_1 = __webpack_require__(/*! ./grappled.md */ \"./src/content/conditions/grappled.md\");\nvar incapacitated_md_1 = __webpack_require__(/*! ./incapacitated.md */ \"./src/content/conditions/incapacitated.md\");\nvar invisible_md_1 = __webpack_require__(/*! ./invisible.md */ \"./src/content/conditions/invisible.md\");\nvar paralyzed_md_1 = __webpack_require__(/*! ./paralyzed.md */ \"./src/content/conditions/paralyzed.md\");\nvar petrified_md_1 = __webpack_require__(/*! ./petrified.md */ \"./src/content/conditions/petrified.md\");\nvar poisoned_md_1 = __webpack_require__(/*! ./poisoned.md */ \"./src/content/conditions/poisoned.md\");\nvar prone_md_1 = __webpack_require__(/*! ./prone.md */ \"./src/content/conditions/prone.md\");\nvar restrained_md_1 = __webpack_require__(/*! ./restrained.md */ \"./src/content/conditions/restrained.md\");\nvar stunned_md_1 = __webpack_require__(/*! ./stunned.md */ \"./src/content/conditions/stunned.md\");\nvar unconscious_md_1 = __webpack_require__(/*! ./unconscious.md */ \"./src/content/conditions/unconscious.md\");\nvar conditions = [\n    { title: \"Blinded\", content: blinded_md_1.default },\n    { title: \"Charmed\", content: charmed_md_1.default },\n    { title: \"Deafened\", content: deafened_md_1.default },\n    { title: \"Exhaustion\", content: exhaustion_md_1.default },\n    { title: \"Frightened\", content: frightened_md_1.default },\n    { title: \"Grappled\", content: grappled_md_1.default },\n    { title: \"Incapacitated\", content: incapacitated_md_1.default },\n    { title: \"Invisible\", content: invisible_md_1.default },\n    { title: \"Paralyzed\", content: paralyzed_md_1.default },\n    { title: \"Petrified\", content: petrified_md_1.default },\n    { title: \"Poisoned\", content: poisoned_md_1.default },\n    { title: \"Prone\", content: prone_md_1.default },\n    { title: \"Restrained\", content: restrained_md_1.default },\n    { title: \"Stunned\", content: stunned_md_1.default },\n    { title: \"Unconscious\", content: unconscious_md_1.default }\n];\nexports.default = conditions;\n\n\n//# sourceURL=webpack:///./src/content/conditions/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/invisible.md":
+/*!*********************************************!*\
+  !*** ./src/content/conditions/invisible.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* An invisible creature is impossible to see without the aid of magic or a special sense. For the purpose of hiding, the creature is heavily obscured. The creature's location can be detected by any noise it makes or any tracks it leaves.\\n* Attack rolls against the creature have disadvantage, and the creature's attack rolls have advantage.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/invisible.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/paralyzed.md":
+/*!*********************************************!*\
+  !*** ./src/content/conditions/paralyzed.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A paralyzed creature is incapacitated (see the condition) and can't move or speak.\\n* The creature automatically fails Strength and Dexterity saving throws.\\n* Attack rolls against the creature have advantage.\\n* Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/paralyzed.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/petrified.md":
+/*!*********************************************!*\
+  !*** ./src/content/conditions/petrified.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A petrified creature is transformed, along with any nonmagical object it is wearing or carrying, into a solid inanimate substance (usually stone). Its weight increases by a factor of ten, and it ceases aging.\\n* The creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings.\\n* Attack rolls against the creature have advantage.\\n* The creature automatically fails Strength and Dexterity saving throws.\\n* The creature has resistance to all damage.\\n* The creature is immune to poison and disease, although a poison or disease already in its system is suspended, not neutralized.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/petrified.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/poisoned.md":
+/*!********************************************!*\
+  !*** ./src/content/conditions/poisoned.md ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A poisoned creature has disadvantage on attack rolls and ability checks.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/poisoned.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/prone.md":
+/*!*****************************************!*\
+  !*** ./src/content/conditions/prone.md ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.\\n* The creature has disadvantage on attack rolls.\\n* An attack roll against the creature has advantage if the attacker is within 5 feet of the creature. Otherwise, the attack roll has disadvantage.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/prone.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/restrained.md":
+/*!**********************************************!*\
+  !*** ./src/content/conditions/restrained.md ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.\\n* Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.\\n* The creature has disadvantage on Dexterity saving throws.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/restrained.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/stunned.md":
+/*!*******************************************!*\
+  !*** ./src/content/conditions/stunned.md ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly.\\n* The creature automatically fails Strength and Dexterity saving throws.\\n* Attack rolls against the creature have advantage.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/stunned.md?");
+
+/***/ }),
+
+/***/ "./src/content/conditions/unconscious.md":
+/*!***********************************************!*\
+  !*** ./src/content/conditions/unconscious.md ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"* An unconscious creature is incapacitated (see the condition), can't move or speak, and is unaware of its surroundings\\n* The creature drops whatever it's holding and falls prone.\\n* The creature automatically fails Strength and Dexterity saving throws.\\n* Attack rolls against the creature have advantage.\\n* Any attack that hits the creature is a critical hit if the attacker is within 5 feet of the creature.\\n\");\n\n//# sourceURL=webpack:///./src/content/conditions/unconscious.md?");
 
 /***/ }),
 
@@ -1923,7 +2103,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar fuse_js_1 = __webpack_require__(/*! fuse.js */ \"./node_modules/fuse.js/dist/fuse.esm.js\");\nvar exhaustion_md_1 = __webpack_require__(/*! ./content/conditions/exhaustion.md */ \"./src/content/conditions/exhaustion.md\");\nvar fuseOptions = {\n    keys: [\n        \"title\"\n    ]\n};\nvar conditions = [\n    {\n        title: \"Restrained\",\n        content: \"* A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.\\n* Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.\\n* The creature has disadvantage on Dexterity saving throws.\"\n    },\n    {\n        title: \"Grappled\",\n        content: \"* A grappled creature's speed becomes 0, and it can't benefit from any bonus to its speed.\\n* The condition ends if the grappler is incapacitated (see the condition).\\n* The condition also ends if an effect removes the grappled creature from the reach of the grappler or grappling effect, such as when a creature is hurled away by the *thunder-wave* spell.\"\n    },\n    {\n        title: \"Stunned\",\n        content: \"* A stunned creature is incapacitated (see the condition), can't move, and can speak only falteringly.\\n* The creature automatically fails Strength and Dexterity saving throws.\\n* Attack rolls against the creature have advantage.\"\n    },\n    {\n        title: \"Exhaustion\",\n        content: exhaustion_md_1.default\n    }\n];\nfunction search(query) {\n    var fuse = new fuse_js_1.default(conditions, fuseOptions);\n    return fuse.search(query).map(function (fuseResult) { return fuseResult.item; });\n}\nexports.default = search;\n\n\n//# sourceURL=webpack:///./src/search.ts?");
+eval("\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar fuse_js_1 = __webpack_require__(/*! fuse.js */ \"./node_modules/fuse.js/dist/fuse.esm.js\");\nvar conditions_1 = __webpack_require__(/*! ./content/conditions */ \"./src/content/conditions/index.ts\");\nvar fuseOptions = {\n    keys: [\n        \"title\"\n    ]\n};\nvar data = __spreadArrays(conditions_1.default);\nfunction search(query) {\n    var fuse = new fuse_js_1.default(data, fuseOptions);\n    return fuse.search(query).map(function (fuseResult) { return fuseResult.item; });\n}\nexports.default = search;\n\n\n//# sourceURL=webpack:///./src/search.ts?");
 
 /***/ })
 
