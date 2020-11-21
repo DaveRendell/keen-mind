@@ -35,6 +35,10 @@ module.exports = {
         loader: "source-map-loader",
       },
       {
+        test: /\.md$/,
+        loader: "raw-loader"
+      },
+      {
         test: /\.css$/,
         loader: "css-loader",
       },
