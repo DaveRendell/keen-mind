@@ -1,5 +1,6 @@
 import * as React from "react"
-import SearchResult from "../models/searchResult";
+import SearchResult from "../models/searchResult"
+import * as ReactMarkdown from "react-markdown"
 
 interface SearchResultProps {
   searchResult: SearchResult
@@ -8,13 +9,17 @@ interface SearchResultProps {
 export default function(
   { 
     searchResult: {
-      title
+      title,
+      content
     } 
   }: SearchResultProps
 ) {
   return (
     <div className="search-result">
-      { title }
+      <h3>{ title }</h3>
+      <ReactMarkdown
+        children={content}
+      />
     </div>
   )
 }
