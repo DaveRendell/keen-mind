@@ -13,7 +13,11 @@ export default function({query}: SearchResultsProps) {
     <div className="search-results">
       {
         searchResults.map((searchResult, idx) => 
-          <SearchResult key={idx} searchResult={searchResult} />)
+          <SearchResult
+            key={ idx }
+            searchResult={ searchResult }
+            isFirst={ idx == 0 }
+          />)
       }
     </div>
   )
