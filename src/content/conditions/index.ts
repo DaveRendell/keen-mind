@@ -13,9 +13,8 @@ import prone from "./prone.md"
 import restrained from "./restrained.md"
 import stunned from "./stunned.md"
 import unconscious from "./unconscious.md"
-import SearchResult from "../../models/searchResult"
 
-const conditions: SearchResult[] = [
+const conditions = [
   { title: "Blinded", content: blinded },
   { title: "Charmed", content: charmed },
   { title: "Deafened", content: deafened },
@@ -33,4 +32,10 @@ const conditions: SearchResult[] = [
   { title: "Unconscious", content: unconscious }
 ]
 
-export default conditions
+export default conditions.map(({title, content}) => {
+  return {
+    title,
+    content,
+    breadcrumbs: ["Conditions", "Test"]
+  }
+})

@@ -12,7 +12,8 @@ export default function(
   { 
     searchResult: {
       title,
-      content
+      content,
+      breadcrumbs
     },
     isFirst
   }: SearchResultProps
@@ -20,6 +21,16 @@ export default function(
   return (
     <div className="search-result">
       { isFirst ? null : <hr/> }
+      <div className="breadcrumb">
+        {
+          breadcrumbs.map((breadcrumb, idx) => {
+            return (<span>
+              <span>{idx > 0 ? " > " : null}</span>
+              <b>{breadcrumb}</b>
+            </span>)
+          })
+        }
+      </div>
       <h3>{ title }</h3>
       <ReactMarkdown
         plugins={[remarkGFM]}
