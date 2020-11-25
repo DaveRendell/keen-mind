@@ -46,6 +46,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: "./src/favicon.png",
       template: path.resolve(__dirname, "src", "index.html"),
     }),
     new MiniCssExtractPlugin({
