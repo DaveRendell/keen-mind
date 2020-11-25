@@ -1863,7 +1863,7 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Re
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactMarkdown = __webpack_require__(/*! react-markdown */ \"./node_modules/react-markdown/lib/react-markdown.js\");\nvar remarkGFM = __webpack_require__(/*! remark-gfm */ \"./node_modules/remark-gfm/index.js\");\nfunction default_1(_a) {\n    var _b = _a.searchResult, title = _b.title, content = _b.content, breadcrumbs = _b.breadcrumbs, isFirst = _a.isFirst;\n    return (React.createElement(\"div\", { className: \"search-result\" },\n        isFirst ? null : React.createElement(\"hr\", null),\n        React.createElement(\"div\", { className: \"breadcrumb\" }, breadcrumbs.map(function (breadcrumb, idx) {\n            return (React.createElement(\"span\", null,\n                React.createElement(\"span\", null, idx > 0 ? \" > \" : null),\n                React.createElement(\"b\", null, breadcrumb)));\n        })),\n        React.createElement(\"h3\", null, title),\n        React.createElement(ReactMarkdown, { plugins: [remarkGFM], children: content })));\n}\nexports.default = default_1;\n\n\n//# sourceURL=webpack:///./src/components/SearchResult.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar ReactMarkdown = __webpack_require__(/*! react-markdown */ \"./node_modules/react-markdown/lib/react-markdown.js\");\nvar remarkGFM = __webpack_require__(/*! remark-gfm */ \"./node_modules/remark-gfm/index.js\");\nfunction default_1(_a) {\n    var _b = _a.searchResult, title = _b.title, content = _b.content, breadcrumbs = _b.breadcrumbs, isFirst = _a.isFirst;\n    return (React.createElement(\"div\", { className: \"search-result\" },\n        isFirst ? null : React.createElement(\"hr\", null),\n        React.createElement(\"div\", { className: \"breadcrumb\" }, breadcrumbs.map(function (breadcrumb, idx) {\n            return (React.createElement(\"span\", null,\n                React.createElement(\"span\", null, idx > 0 ? \" > \" : null),\n                React.createElement(\"b\", null, breadcrumb)));\n        })),\n        React.createElement(\"h2\", null, title),\n        React.createElement(ReactMarkdown, { plugins: [remarkGFM], children: content })));\n}\nexports.default = default_1;\n\n\n//# sourceURL=webpack:///./src/components/SearchResult.tsx?");
 
 /***/ }),
 
@@ -1876,6 +1876,90 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar Re
 
 "use strict";
 eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nvar search_1 = __webpack_require__(/*! ../search */ \"./src/search.ts\");\nvar SearchResult_1 = __webpack_require__(/*! ./SearchResult */ \"./src/components/SearchResult.tsx\");\nfunction default_1(_a) {\n    var query = _a.query;\n    var searchResults = search_1.default(query);\n    return (React.createElement(\"div\", { className: \"search-results\" }, searchResults.map(function (searchResult, idx) {\n        return React.createElement(SearchResult_1.default, { key: idx, searchResult: searchResult, isFirst: idx == 0 });\n    })));\n}\nexports.default = default_1;\n\n\n//# sourceURL=webpack:///./src/components/SearchResults.tsx?");
+
+/***/ }),
+
+/***/ "./src/content/combat/index.ts":
+/*!*************************************!*\
+  !*** ./src/content/combat/index.ts ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar movement_and_position_1 = __webpack_require__(/*! ./movement-and-position */ \"./src/content/combat/movement-and-position/index.ts\");\nexports.default = __spreadArrays(movement_and_position_1.default);\n\n\n//# sourceURL=webpack:///./src/content/combat/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/combat/movement-and-position/being-prone.md":
+/*!*****************************************************************!*\
+  !*** ./src/content/combat/movement-and-position/being-prone.md ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Combatants often find themselves lying on the ground, either because they are knocked down or because they throw themselves down. In the game, they are prone. You can **drop prone without using any of your speed**. **Standing up** takes more effort; doing so costs an amount of movement equal to **half your speed**. For example, if your speed is 30 feet, you must spend 15 feet of movement to stand up. You can’t stand up if you don’t have enough movement left or **if your speed is 0**. To move while prone, you must crawl or use magic such as teleportation. Every foot of movement while crawling **costs 1 extra foot**. Crawling 1 foot in difficult terrain, therefore, costs 3 feet of movement.\\n\");\n\n//# sourceURL=webpack:///./src/content/combat/movement-and-position/being-prone.md?");
+
+/***/ }),
+
+/***/ "./src/content/combat/movement-and-position/creature-size.md":
+/*!*******************************************************************!*\
+  !*** ./src/content/combat/movement-and-position/creature-size.md ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Each creature takes up a different amount of space. Table: Size Categories shows how much space a creature of a particular size controls in combat. Objects sometimes use the same size categories.\\n|Size \\t      |Space                  |\\n|-------------|-----------------------|\\n|Tiny \\t      |2½ by 2½ ft.           |\\n|Small \\t      |5 by 5 ft.             |\\n|Medium \\t    |5 by 5 ft.             |\\n|Large \\t      |10 by 10 ft.           |\\n|Huge \\t      |15 by 15 ft.           |\\n|Gargantuan \\t|20 by 20 ft. or larger |\\n### Space\\nA creature’s space is the area in feet that it effectively controls in combat, not an expression of its physical dimensions. A typical Medium creature isn’t 5 feet wide, for example, but it does control a space that wide. If a Medium hobgoblin stands in a 5-foot-wide doorway, other creatures can’t get through unless the hobgoblin lets them. A creature’s space also reflects the area it needs to fight effectively. For that reason, there’s a limit to the number of creatures that can surround another creature in combat. Assuming Medium combatants, eight creatures can fit in a 5-foot radius around another one. Because larger creatures take up more space, fewer of them can surround a creature. If five Large creatures crowd around a Medium or smaller one, there’s little room for anyone else. In contrast, as many as twenty Medium creatures can surround a Gargantuan one.\\n### Squeezing into a Smaller Space\\nA creature can squeeze through a space that is large enough for a creature **one size smaller** than it. Thus, a Large creature can squeeze through a passage that’s only 5 feet wide. While squeezing through a space, a creature must spend **1 extra foot for every foot** it moves there, and it has **disadvantage on attack rolls and Dexterity saving throws**. **Attack rolls** against the creature have **advantage** while it’s in the smaller space. \");\n\n//# sourceURL=webpack:///./src/content/combat/movement-and-position/creature-size.md?");
+
+/***/ }),
+
+/***/ "./src/content/combat/movement-and-position/difficult-terrain.md":
+/*!***********************************************************************!*\
+  !*** ./src/content/combat/movement-and-position/difficult-terrain.md ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Combat rarely takes place in bare rooms or on featureless plains. Boulder-strewn caverns, briar- choked forests, treacherous staircases—the setting of a typical fight contains difficult terrain. **Every foot of movement in difficult terrain costs 1 extra foot**. This rule is true **even if multiple things in a space count** as difficult terrain. Low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs are examples of difficult terrain. The **space of another creature**, whether hostile or not, also counts as difficult terrain.\\n\");\n\n//# sourceURL=webpack:///./src/content/combat/movement-and-position/difficult-terrain.md?");
+
+/***/ }),
+
+/***/ "./src/content/combat/movement-and-position/flying-movement.md":
+/*!*********************************************************************!*\
+  !*** ./src/content/combat/movement-and-position/flying-movement.md ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Flying creatures enjoy many benefits of mobility, but they must also deal with the danger of falling. If a flying creature is knocked **prone**, has its **speed reduced to 0**, or is otherwise deprived of the ability to move, the creature **falls**, unless it has the ability to **hover** or it is being held aloft by **magic**, such as by the fly spell.\\n\");\n\n//# sourceURL=webpack:///./src/content/combat/movement-and-position/flying-movement.md?");
+
+/***/ }),
+
+/***/ "./src/content/combat/movement-and-position/index.ts":
+/*!***********************************************************!*\
+  !*** ./src/content/combat/movement-and-position/index.ts ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar difficult_terrain_md_1 = __webpack_require__(/*! ./difficult-terrain.md */ \"./src/content/combat/movement-and-position/difficult-terrain.md\");\nvar being_prone_md_1 = __webpack_require__(/*! ./being-prone.md */ \"./src/content/combat/movement-and-position/being-prone.md\");\nvar moving_around_other_creatures_md_1 = __webpack_require__(/*! ./moving-around-other-creatures.md */ \"./src/content/combat/movement-and-position/moving-around-other-creatures.md\");\nvar flying_movement_md_1 = __webpack_require__(/*! ./flying-movement.md */ \"./src/content/combat/movement-and-position/flying-movement.md\");\nvar creature_size_md_1 = __webpack_require__(/*! ./creature-size.md */ \"./src/content/combat/movement-and-position/creature-size.md\");\nvar movementAndPosition = [\n    { title: \"Difficult Terrain\", content: difficult_terrain_md_1.default, breadcrumbs: [\"Combat\", \"Movement and Position\"] },\n    { title: \"Being Prone\", content: being_prone_md_1.default, breadcrumbs: [\"Combat\", \"Movement and Position\"] },\n    { title: \"Moving Around Other Creatures\", content: moving_around_other_creatures_md_1.default, breadcrumbs: [\"Combat\", \"Movement and Position\"] },\n    { title: \"Flying Movement\", content: flying_movement_md_1.default, breadcrumbs: [\"Combat\", \"Movement and Position\"] },\n    { title: \"Creature Size\", content: creature_size_md_1.default, breadcrumbs: [\"Combat\", \"Movement and Position\"] },\n];\nexports.default = movementAndPosition;\n\n\n//# sourceURL=webpack:///./src/content/combat/movement-and-position/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/combat/movement-and-position/moving-around-other-creatures.md":
+/*!***********************************************************************************!*\
+  !*** ./src/content/combat/movement-and-position/moving-around-other-creatures.md ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"You can move through a **nonhostile** creature’s space. In contrast, you can move through a **hostile** creature’s space only if the creature is at least **two sizes larger or smaller** than you. Remember that another creature’s space is **difficult terrain** for you. Whether a creature is a friend or an enemy, you **can’t willingly end your move in its space**. If you leave a hostile creature’s **reach** during your move, you provoke an **opportunity attack**.\\n\");\n\n//# sourceURL=webpack:///./src/content/combat/movement-and-position/moving-around-other-creatures.md?");
 
 /***/ }),
 
@@ -2071,6 +2155,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/content/index.ts":
+/*!******************************!*\
+  !*** ./src/content/index.ts ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar conditions_1 = __webpack_require__(/*! ./conditions */ \"./src/content/conditions/index.ts\");\nvar combat_1 = __webpack_require__(/*! ./combat */ \"./src/content/combat/index.ts\");\nexports.default = __spreadArrays(conditions_1.default, combat_1.default);\n\n\n//# sourceURL=webpack:///./src/content/index.ts?");
+
+/***/ }),
+
 /***/ "./src/index.tsx":
 /*!***********************!*\
   !*** ./src/index.tsx ***!
@@ -2103,7 +2199,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar fuse_js_1 = __webpack_require__(/*! fuse.js */ \"./node_modules/fuse.js/dist/fuse.esm.js\");\nvar conditions_1 = __webpack_require__(/*! ./content/conditions */ \"./src/content/conditions/index.ts\");\nvar defaultOptions = {\n    keys: [\n        \"title\"\n    ]\n};\nvar data = __spreadArrays(conditions_1.default);\nvar index = fuse_js_1.default.createIndex(defaultOptions.keys, data);\nfunction search(query) {\n    var options = __assign(__assign({}, defaultOptions), { minMatchCharLength: query.length > 1 ? 2 : 1 });\n    var fuse = new fuse_js_1.default(data, options, index);\n    return fuse.search(query).map(function (fuseResult) { return fuseResult.item; });\n}\nexports.default = search;\n\n\n//# sourceURL=webpack:///./src/search.ts?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar fuse_js_1 = __webpack_require__(/*! fuse.js */ \"./node_modules/fuse.js/dist/fuse.esm.js\");\nvar content_1 = __webpack_require__(/*! ./content */ \"./src/content/index.ts\");\nvar defaultOptions = {\n    keys: [\n        \"title\"\n    ]\n};\nvar index = fuse_js_1.default.createIndex(defaultOptions.keys, content_1.default);\nfunction search(query) {\n    var options = __assign(__assign({}, defaultOptions), { minMatchCharLength: query.length > 1 ? 2 : 1 });\n    var fuse = new fuse_js_1.default(content_1.default, options, index);\n    return fuse.search(query).map(function (fuseResult) { return fuseResult.item; });\n}\nexports.default = search;\n\n\n//# sourceURL=webpack:///./src/search.ts?");
 
 /***/ })
 
