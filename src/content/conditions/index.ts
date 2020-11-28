@@ -14,28 +14,24 @@ import restrained from "./restrained.md"
 import stunned from "./stunned.md"
 import unconscious from "./unconscious.md"
 
+const breadcrumbs = ["Conditions"]
+
 const conditions = [
-  { title: "Blinded", content: blinded },
-  { title: "Charmed", content: charmed },
-  { title: "Deafened", content: deafened },
-  { title: "Exhaustion", content: exhaustion },
-  { title: "Frightened", content: frightened },
-  { title: "Grappled", content: grappled },
-  { title: "Incapacitated", content: incapacitated },
-  { title: "Invisible", content: invisible },
-  { title: "Paralyzed", content: paralyzed },
-  { title: "Petrified", content: petrified },
-  { title: "Poisoned", content: poisoned },
-  { title: "Prone", content: prone },
-  { title: "Restrained", content: restrained },
-  { title: "Stunned", content: stunned },
-  { title: "Unconscious", content: unconscious }
+  { title: "Blinded", content: blinded, breadcrumbs },
+  { title: "Charmed", content: charmed, breadcrumbs },
+  { title: "Deafened", content: deafened, breadcrumbs },
+  { title: "Exhaustion", content: exhaustion, breadcrumbs },
+  { title: "Frightened", content: frightened, breadcrumbs },
+  { title: "Grappled", content: grappled, breadcrumbs },
+  { title: "Incapacitated", content: incapacitated, breadcrumbs },
+  { title: "Invisible", content: invisible, breadcrumbs },
+  { title: "Paralyzed", content: paralyzed, breadcrumbs },
+  { title: "Petrified", content: petrified, breadcrumbs },
+  { title: "Poisoned", content: poisoned, breadcrumbs },
+  { title: "Prone", content: prone, breadcrumbs },
+  { title: "Restrained", content: restrained, breadcrumbs },
+  { title: "Stunned", content: stunned, breadcrumbs },
+  { title: "Unconscious", content: unconscious, breadcrumbs }
 ]
 
-export default conditions.map(({title, content}) => {
-  return {
-    title,
-    content,
-    breadcrumbs: ["Conditions", "Test"]
-  }
-})
+export default conditions
