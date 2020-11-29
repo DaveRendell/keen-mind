@@ -4,6 +4,7 @@ import actions from './actions'
 import makingAnAttack from './making-an-attack'
 import cover from "./cover"
 import damageAndHealing from './damage-and-healing'
+import mountedCombat from './mounted-combat'
 
 export default [
   ...theOrderOfCombat,
@@ -11,5 +12,6 @@ export default [
   ...actions,
   ...makingAnAttack,
   ...cover,
-  ...damageAndHealing
+  ...damageAndHealing,
+  ...mountedCombat
 ]
