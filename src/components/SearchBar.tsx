@@ -9,7 +9,11 @@ export default function({query, setQuery}: SearchBarProps) {
 
   return (
     <div className="search-bar">
-      <input value={query} onChange={e => setQuery(e.target.value)} />
+      <input 
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+        autoFocus
+      />
     </div>
   )
 }
