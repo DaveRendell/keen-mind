@@ -1827,7 +1827,7 @@ eval("module.exports = extend\n\nvar hasOwnProperty = Object.prototype.hasOwnPro
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction Footer() {\n    return (React.createElement(\"footer\", null,\n        React.createElement(\"hr\", null),\n        React.createElement(\"p\", null, \"Crafted with love using React, Typescript, and Fuse.js.\"),\n        React.createElement(\"p\", null, \"Contains data from the Dungeons & Dragons 5th Edition SRD.\")));\n}\nexports.default = Footer;\n\n\n//# sourceURL=webpack:///./src/components/Footer.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nfunction Footer() {\n    return (React.createElement(\"footer\", null,\n        React.createElement(\"hr\", null),\n        React.createElement(\"p\", null, \"Crafted with love using React, Typescript, and Fuse.js.\"),\n        React.createElement(\"p\", null, \"Contains content from the Dungeons & Dragons 5th Edition SRD.\")));\n}\nexports.default = Footer;\n\n\n//# sourceURL=webpack:///./src/components/Footer.tsx?");
 
 /***/ }),
 
@@ -2715,7 +2715,319 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar conditions_1 = __webpack_require__(/*! ./conditions */ \"./src/content/conditions/index.ts\");\nvar combat_1 = __webpack_require__(/*! ./combat */ \"./src/content/combat/index.ts\");\nexports.default = __spreadArrays(conditions_1.default, combat_1.default);\n\n\n//# sourceURL=webpack:///./src/content/index.ts?");
+eval("\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar conditions_1 = __webpack_require__(/*! ./conditions */ \"./src/content/conditions/index.ts\");\nvar combat_1 = __webpack_require__(/*! ./combat */ \"./src/content/combat/index.ts\");\nvar spellcasting_1 = __webpack_require__(/*! ./spellcasting */ \"./src/content/spellcasting/index.ts\");\nexports.default = __spreadArrays(conditions_1.default, combat_1.default, spellcasting_1.default);\n\n\n//# sourceURL=webpack:///./src/content/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/attack-rolls.md":
+/*!******************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/attack-rolls.md ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Some spells require the caster to make an attack roll to determine whether the spell effect hits the intended target. Your **attack bonus** with a spell attack equals your **spellcasting ability modifier + your proficiency bonus**.\\n\\nMost spells that require attack rolls involve ranged attacks. **Remember that you have disadvantage on a ranged attack roll if you are within 5 feet of a hostile creature that can see you and that isn’t incapacitated**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/attack-rolls.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/bonus-action.md":
+/*!******************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/bonus-action.md ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A spell cast with a bonus action is especially swift. You must use a bonus action on your turn to cast the spell, **provided that you haven’t already taken a bonus action this turn**. You **can’t cast another spell during the same turn**, except for a **cantrip** with a casting time of **1 action**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/bonus-action.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/combining-magical-effects.md":
+/*!*******************************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/combining-magical-effects.md ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"The effects of **different spells add together** while the durations of those spells overlap. **The effects of the same spell cast multiple times don’t combine**, however. Instead, the **most potent effect**—such as the highest bonus—from those castings **applies while their durations overlap**.\\n\\nFor example, if two clerics cast bless on the same target, that character gains the spell’s benefit only once; he or she doesn’t get to roll two bonus dice.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/combining-magical-effects.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/components.md":
+/*!****************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/components.md ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A spell’s components are the physical requirements you must meet in order to cast it. Each spell’s description indicates whether it requires **verbal (V)**, **somatic (S)**, or **material (M)** components. If you can’t provide one or more of a spell’s components, you are unable to cast the spell.\\n\\n### Verbal (V)\\n\\nMost spells require the chanting of mystic words. The words themselves aren’t the source of the spell’s power; rather, the particular combination of sounds, with specific pitch and resonance, sets the threads of magic in motion. Thus, a character who is **gagged** or in an **area of silence**, such as one created by the silence spell, **can’t cast a spell** with a verbal component.\\n\\n### Somatic (S)\\n\\nSpellcasting gestures might include a forceful gesticulation or an intricate set of gestures. If a spell requires a somatic component, the caster must have **free use of at least one hand** to perform these gestures.\\n\\n### Material (M)\\n\\nCasting some spells requires particular objects, specified in parentheses in the component entry. A character can use a **component pouch** or a **spellcasting focus** (found in “Equipment”) in place of the components specified for a spell. But **if a cost is indicated for a component, a character must have that specific component** before he or she can cast the spell.\\n\\nIf a spell states that a material component is **consumed by the spell**, the caster must provide this component for each casting of the spell.\\n\\nA spellcaster **must have a hand free** to access a spell’s material components—or to hold a spellcasting focus—**but it can be the same hand** that he or she uses to perform somatic components.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/components.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/concentration.md":
+/*!*******************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/concentration.md ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Some spells require you to maintain concentration in order to keep their magic active. **If you lose concentration, such a spell ends**.\\n\\nIf a spell must be maintained with concentration, that fact appears in its Duration entry, and the spell specifies how long you can concentrate on it. **You can end concentration at any time (no action required)**.\\n\\nNormal activity, such as moving and attacking, doesn’t interfere with concentration. The following factors can break concentration:\\n\\n**Casting another spell that requires concentration**. You lose concentration on a spell if you cast another spell that requires concentration. You can’t concentrate on two spells at once.\\n**Taking damage**. Whenever you take damage while you are concentrating on a spell, you must **make a Constitution saving throw to maintain your concentration**. The DC equals **10 or half the damage you take, whichever number is higher**. If you take damage from multiple sources, such as an arrow and a dragon’s breath, you make a **separate saving throw for each source of damage**.\\n**Being incapacitated or killed**. You lose concentration on a spell if you are incapacitated or if you die.\\n\\nThe GM might also decide that certain environmental phenomena, such as a wave crashing over you while you’re on a storm-tossed ship, require you to succeed on a DC 10 Constitution saving throw to maintain concentration on a spell.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/concentration.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/cone.md":
+/*!**********************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/cone.md ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A cone extends in a direction you choose from its point of origin. A cone’s **width at a given point along its length is equal to that point’s distance from the point of origin**. A cone’s area of effect specifies its maximum length.\\n\\nA cone’s **point of origin is not included in the cone’s area of effect**, unless you decide otherwise.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/cone.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/cube.md":
+/*!**********************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/cube.md ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"You select a cube’s point of origin, which lies **anywhere on a face of the cubic effect**. The cube’s size is expressed as the length of each side.\\n\\nA cube’s **point of origin is not included in the cube’s area of effect**, unless you decide otherwise.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/cube.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/cylinder.md":
+/*!**************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/cylinder.md ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A cylinder’s point of origin is the **center of a circle of a particular radius**, as given in the spell description. The **circle must either be on the ground or at the height of the spell effect**. The energy in a cylinder expands in straight lines from the point of origin to the perimeter of the circle, forming the base of the cylinder. The spell’s effect then shoots up from the base or down from the top, to a distance equal to the height of the cylinder.\\n\\nA cylinder’s **point of origin is included in the cylinder’s area of effect**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/cylinder.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/index.ts":
+/*!***********************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/index.ts ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar bonus_action_md_1 = __webpack_require__(/*! ./bonus-action.md */ \"./src/content/spellcasting/casting-a-spell/bonus-action.md\");\nvar reactions_md_1 = __webpack_require__(/*! ./reactions.md */ \"./src/content/spellcasting/casting-a-spell/reactions.md\");\nvar longer_casting_times_md_1 = __webpack_require__(/*! ./longer-casting-times.md */ \"./src/content/spellcasting/casting-a-spell/longer-casting-times.md\");\nvar range_md_1 = __webpack_require__(/*! ./range.md */ \"./src/content/spellcasting/casting-a-spell/range.md\");\nvar components_md_1 = __webpack_require__(/*! ./components.md */ \"./src/content/spellcasting/casting-a-spell/components.md\");\nvar concentration_md_1 = __webpack_require__(/*! ./concentration.md */ \"./src/content/spellcasting/casting-a-spell/concentration.md\");\nvar targets_md_1 = __webpack_require__(/*! ./targets.md */ \"./src/content/spellcasting/casting-a-spell/targets.md\");\nvar cone_md_1 = __webpack_require__(/*! ./cone.md */ \"./src/content/spellcasting/casting-a-spell/cone.md\");\nvar cube_md_1 = __webpack_require__(/*! ./cube.md */ \"./src/content/spellcasting/casting-a-spell/cube.md\");\nvar cylinder_md_1 = __webpack_require__(/*! ./cylinder.md */ \"./src/content/spellcasting/casting-a-spell/cylinder.md\");\nvar line_md_1 = __webpack_require__(/*! ./line.md */ \"./src/content/spellcasting/casting-a-spell/line.md\");\nvar sphere_md_1 = __webpack_require__(/*! ./sphere.md */ \"./src/content/spellcasting/casting-a-spell/sphere.md\");\nvar saving_throws_md_1 = __webpack_require__(/*! ./saving-throws.md */ \"./src/content/spellcasting/casting-a-spell/saving-throws.md\");\nvar attack_rolls_md_1 = __webpack_require__(/*! ./attack-rolls.md */ \"./src/content/spellcasting/casting-a-spell/attack-rolls.md\");\nvar schools_of_magic_md_1 = __webpack_require__(/*! ./schools-of-magic.md */ \"./src/content/spellcasting/casting-a-spell/schools-of-magic.md\");\nvar combining_magical_effects_md_1 = __webpack_require__(/*! ./combining-magical-effects.md */ \"./src/content/spellcasting/casting-a-spell/combining-magical-effects.md\");\nvar breadcrumbs = [\"Spellcasting\", \"Casting a Spell\"];\nexports.default = [\n    { title: \"Bonus Action\", content: bonus_action_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Reactions\", content: reactions_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Longer Casting Times\", content: longer_casting_times_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Range\", content: range_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Components\", content: components_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Concentration\", content: concentration_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Targets\", content: targets_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Cone\", content: cone_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Cube\", content: cube_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Cylinder\", content: cylinder_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Line\", content: line_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Sphere\", content: sphere_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Saving Throws\", content: saving_throws_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Attack Rolls\", content: attack_rolls_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Schools of Magic\", content: schools_of_magic_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Combining Magical Effects\", content: combining_magical_effects_md_1.default, breadcrumbs: breadcrumbs },\n];\n\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/line.md":
+/*!**********************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/line.md ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A line extends from its point of origin in a straight path up to its length and covers an area defined by its width.\\n\\nA line’s **point of origin is not included in the line’s area of effect**, unless you decide otherwise.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/line.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/longer-casting-times.md":
+/*!**************************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/longer-casting-times.md ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Certain spells (including spells cast as rituals) require more time to cast: minutes or even hours. When you cast a spell with a casting time longer than a single action or reaction, you **must spend your action each turn casting the spell**, and you must **maintain your concentration** while you do so (see “Concentration” below). If your **concentration is broken**, the spell fails, but you **don’t expend a spell slot**. If you want to try casting the spell again, you **must start over**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/longer-casting-times.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/range.md":
+/*!***********************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/range.md ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"The **target** of a spell must be within the spell’s **range**. For a spell like magic missile, the target is a creature. For a spell like fireball, the target is the point in space where the ball of fire erupts. Most spells have ranges expressed in feet. Some spells can target only a creature (including you) that you touch. Other spells, such as the shield spell, affect only you. These spells have a range of self. Spells that create cones or lines of effect that originate from you also have a range of self, indicating that the origin point of the spell’s effect must be you (see “Areas of Effect”). **Once a spell is cast, its effects aren’t limited by its range**, unless the spell’s description says otherwise.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/range.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/reactions.md":
+/*!***************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/reactions.md ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Some spells can be cast as reactions. These spells take a fraction of a second to bring about and are cast in response to some event. **If a spell can be cast as a reaction, the spell description tells you exactly when you can do so**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/reactions.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/saving-throws.md":
+/*!*******************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/saving-throws.md ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Many spells specify that a target can make a saving throw to avoid some or all of a spell’s effects. The **spell specifies the ability** that the target uses for the save and what happens on a success or failure.\\n\\nThe **DC** to resist one of your spells equals **8 + your spellcasting ability modifier + your proficiency bonus + any special modifiers**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/saving-throws.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/schools-of-magic.md":
+/*!**********************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/schools-of-magic.md ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Academies of magic group spells into eight categories called schools of magic. Scholars, particularly wizards, apply these categories to all spells, believing that all magic functions in essentially the same way, whether it derives from rigorous study or is bestowed by a deity.\\n\\nThe schools of magic help describe spells; they have no rules of their own, although some rules refer to the schools.\\n\\n**Abjuration** spells are protective in nature, though some of them have aggressive uses. They create magical barriers, negate harmful effects, harm trespassers, or banish creatures to other planes of existence.\\n\\n**Conjuration** spells involve the transportation of objects and creatures from one location to another. Some spells summon creatures or objects to the caster’s side, whereas others allow the caster to teleport to another location. Some conjurations create objects or effects out of nothing.\\n\\n**Divination** spells reveal information, whether in the form of secrets long forgotten, glimpses of the future, the locations of hidden things, the truth behind illusions, or visions of distant people or places.\\n\\n**Enchantment** spells affect the minds of others, influencing or controlling their behavior. Such spells can make enemies see the caster as a friend, force creatures to take a course of action, or even control another creature like a puppet.\\n\\n**Evocation** spells manipulate magical energy to produce a desired effect. Some call up blasts of fire or lightning. Others channel positive energy to heal wounds.\\n\\n**Illusion** spells deceive the senses or minds of others. They cause people to see things that are not there, to miss things that are there, to hear phantom noises, or to remember things that never happened. Some illusions create phantom images that any creature can see, but the most insidious illusions plant an image directly in the mind of a creature.\\n\\n**Necromancy** spells manipulate the energies of life and death. Such spells can grant an extra reserve of life force, drain the life energy from another creature, create the undead, or even bring the dead back to life. Creating the undead through the use of necromancy spells such as animate dead is not a good act, and only evil casters use such spells frequently.\\n\\n**Transmutation** spells change the properties of a creature, object, or environment. They might turn an enemy into a harmless creature, bolster the strength of an ally, make an object move at the caster’s command, or enhance a creature’s innate healing abilities to rapidly recover from injury.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/schools-of-magic.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/sphere.md":
+/*!************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/sphere.md ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"You select a sphere’s point of origin, and the sphere **extends outward from that point**. The sphere’s size is expressed as a **radius** in feet that extends from the point.\\n\\nA sphere’s **point of origin is included** in the sphere’s area of effect.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/sphere.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/casting-a-spell/targets.md":
+/*!*************************************************************!*\
+  !*** ./src/content/spellcasting/casting-a-spell/targets.md ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A typical spell requires you to pick one or more targets to be affected by the spell’s magic. A spell’s description tells you whether the spell targets creatures, objects, or a point of origin for an area of effect (described below).\\n\\n**Unless a spell has a perceptible effect, a creature might not know it was targeted by a spell at all**. An effect like crackling lightning is obvious, but a more subtle effect, such as an attempt to read a creature’s thoughts, typically goes unnoticed, unless a spell says otherwise.\\n\\nTo target something, you **must have a clear path to it, so it can’t be behind total cover**.\\n\\nIf you place an area of effect at a point that you can’t see and an obstruction, such as a wall, is **between you and that point**, the point of origin comes into being **on the near side of that obstruction**.\\n\\nIf a spell targets a creature of your choice, **you can choose yourself**, unless the creature must be hostile or specifically a creature other than you. If you are in the area of effect of a spell you cast, you can target yourself.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/casting-a-spell/targets.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/index.ts":
+/*!*******************************************!*\
+  !*** ./src/content/spellcasting/index.ts ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __spreadArrays = (this && this.__spreadArrays) || function () {\n    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;\n    for (var r = Array(s), k = 0, i = 0; i < il; i++)\n        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)\n            r[k] = a[j];\n    return r;\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar what_is_a_spell_1 = __webpack_require__(/*! ./what-is-a-spell */ \"./src/content/spellcasting/what-is-a-spell/index.ts\");\nvar casting_a_spell_1 = __webpack_require__(/*! ./casting-a-spell */ \"./src/content/spellcasting/casting-a-spell/index.ts\");\nexports.default = __spreadArrays(what_is_a_spell_1.default, casting_a_spell_1.default);\n\n\n//# sourceURL=webpack:///./src/content/spellcasting/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/cantrips.md":
+/*!**************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/cantrips.md ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"A cantrip is a spell that can be cast at will, **without using a spell slot and without being prepared in advance**. Repeated practice has fixed the spell in the caster’s mind and infused the caster with the magic needed to produce the effect over and over. **A cantrip’s spell level is 0**.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/cantrips.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/casting-a-spell-at-a-higher-level.md":
+/*!***************************************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/casting-a-spell-at-a-higher-level.md ***!
+  \***************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"When a spellcaster casts a spell using a slot that is of a higher level than the spell, the **spell assumes the higher level for that casting**. For instance, if Umara casts magic missile using one of her 2nd-level slots, that magic missile is 2nd level. Effectively, the spell expands to fill the slot it is put into.\\n\\nSome spells, such as magic missile and cure wounds, have more powerful effects when cast at a higher level, as detailed in a spell’s description.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/casting-a-spell-at-a-higher-level.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/casting-in-armor.md":
+/*!**********************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/casting-in-armor.md ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Because of the mental focus and precise gestures required for spellcasting, you **must be proficient with the armor you are wearing to cast a spell**. You are otherwise too distracted and physically hampered by your armor for spellcasting.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/casting-in-armor.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/index.ts":
+/*!***********************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/index.ts ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar cantrips_md_1 = __webpack_require__(/*! ./cantrips.md */ \"./src/content/spellcasting/what-is-a-spell/cantrips.md\");\nvar casting_a_spell_at_a_higher_level_md_1 = __webpack_require__(/*! ./casting-a-spell-at-a-higher-level.md */ \"./src/content/spellcasting/what-is-a-spell/casting-a-spell-at-a-higher-level.md\");\nvar casting_in_armor_md_1 = __webpack_require__(/*! ./casting-in-armor.md */ \"./src/content/spellcasting/what-is-a-spell/casting-in-armor.md\");\nvar known_and_prepared_spells_md_1 = __webpack_require__(/*! ./known-and-prepared-spells.md */ \"./src/content/spellcasting/what-is-a-spell/known-and-prepared-spells.md\");\nvar rituals_md_1 = __webpack_require__(/*! ./rituals.md */ \"./src/content/spellcasting/what-is-a-spell/rituals.md\");\nvar spell_level_md_1 = __webpack_require__(/*! ./spell-level.md */ \"./src/content/spellcasting/what-is-a-spell/spell-level.md\");\nvar spell_slots_md_1 = __webpack_require__(/*! ./spell-slots.md */ \"./src/content/spellcasting/what-is-a-spell/spell-slots.md\");\nvar breadcrumbs = [\"Spellcasting\", \"What is a Spell\"];\nexports.default = [\n    { title: \"Cantrips\", content: cantrips_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Casting a Spell at a Higher Level\", content: casting_a_spell_at_a_higher_level_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Casting in Armour\", content: casting_in_armor_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Known and Prepared Spells\", content: known_and_prepared_spells_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Rituals\", content: rituals_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Spell Level\", content: spell_level_md_1.default, breadcrumbs: breadcrumbs },\n    { title: \"Spell Slot\", content: spell_slots_md_1.default, breadcrumbs: breadcrumbs },\n];\n\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/index.ts?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/known-and-prepared-spells.md":
+/*!*******************************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/known-and-prepared-spells.md ***!
+  \*******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Before a spellcaster can use a spell, he or she must have the spell firmly fixed in mind, or must have access to the spell in a magic item. Members of a few classes, including bards and sorcerers, have a limited list of spells they know that are always fixed in mind. The same thing is true of many magic-using monsters. Other spellcasters, such as clerics and wizards, undergo a process of preparing spells. This process varies for different classes, as detailed in their descriptions.\\n\\nIn every case, the number of spells a caster can have fixed in mind at any given time depends on the character’s level.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/known-and-prepared-spells.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/rituals.md":
+/*!*************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/rituals.md ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Certain spells have a special tag: ritual. Such a spell **can be cast following the normal rules for spellcasting**, or the spell can be cast as a ritual. **The ritual version of a spell takes 10 minutes longer to cast than normal**. It also **doesn’t expend a spell slot**, which means the ritual version of a spell **can’t be cast at a higher level**.\\n\\nTo cast a spell as a ritual, a **spellcaster must have a feature that grants the ability to do so**. The cleric and the druid, for example, have such a feature. The caster **must also have the spell prepared or on his or her list of spells known**, unless the character’s ritual feature specifies otherwise, as the wizard’s does.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/rituals.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/spell-level.md":
+/*!*****************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/spell-level.md ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Every spell has a **level from 0 to 9**. A spell’s level is a general indicator of how powerful it is, with the lowly (but still impressive) magic missile at 1st level and the earth-shaking wish at 9th.\\n\\n**Cantrips**—simple but powerful spells that characters can cast almost by rote—are **level 0**. The higher a spell’s level, the higher level a spellcaster must be to use that spell.\\n\\n**Spell level and character level don’t correspond directly**. Typically, a character has to be at least 17th level, not 9th level, to cast a 9th-level spell.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/spell-level.md?");
+
+/***/ }),
+
+/***/ "./src/content/spellcasting/what-is-a-spell/spell-slots.md":
+/*!*****************************************************************!*\
+  !*** ./src/content/spellcasting/what-is-a-spell/spell-slots.md ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"Regardless of how many spells a caster knows or prepares, he or she can cast only a limited number of spells before resting. Manipulating the fabric of magic and channeling its energy into even a simple spell is physically and mentally taxing, and higher-level spells are even more so. Thus, each spellcasting class’s description (except that of the warlock) includes a table showing how many spell slots of each spell level a character can use at each character level. For example, the 3rd-level wizard Umara has four 1st-level spell slots and two 2nd-level slots.\\n\\nWhen a character casts a spell, he or she **expends a slot of that spell’s level or higher**, effectively “filling” a slot with the spell. You can think of a spell slot as a groove of a certain size—small for a 1st-level slot, larger for a spell of higher level. A 1st-level spell fits into a slot of any size, but a 9th-level spell fits only in a 9th-level slot. So when Umara casts magic missile, a 1st-level spell, she spends one of her four 1st-level slots and has three remaining.\\n\\n**Finishing a long rest restores any expended spell slots**.\\n\\nSome characters and monsters have special abilities that let them cast spells without using spell slots. For example, a monk who follows the Way of the Four Elements, a warlock who chooses certain eldritch invocations, and a pit fiend from the Nine Hells can all cast spells in such a way.\\n\");\n\n//# sourceURL=webpack:///./src/content/spellcasting/what-is-a-spell/spell-slots.md?");
 
 /***/ }),
 
@@ -2751,7 +3063,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar fuse_js_1 = __webpack_require__(/*! fuse.js */ \"./node_modules/fuse.js/dist/fuse.esm.js\");\nvar content_1 = __webpack_require__(/*! ./content */ \"./src/content/index.ts\");\nvar defaultOptions = {\n    keys: [\n        \"title\"\n    ]\n};\nvar index = fuse_js_1.default.createIndex(defaultOptions.keys, content_1.default);\nfunction search(query) {\n    var options = __assign(__assign({}, defaultOptions), { minMatchCharLength: query.length > 1 ? 2 : 1 });\n    var fuse = new fuse_js_1.default(content_1.default, options, index);\n    return fuse.search(query).map(function (fuseResult) { return fuseResult.item; });\n}\nexports.default = search;\n\n\n//# sourceURL=webpack:///./src/search.ts?");
+eval("\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nvar fuse_js_1 = __webpack_require__(/*! fuse.js */ \"./node_modules/fuse.js/dist/fuse.esm.js\");\nvar content_1 = __webpack_require__(/*! ./content */ \"./src/content/index.ts\");\nvar defaultOptions = {\n    keys: [\n        { name: \"title\", weight: 1.0 },\n        { name: \"breadcrumbs\", weight: 0.75 },\n        { name: \"content\", weight: 0.25 },\n    ]\n};\nvar index = fuse_js_1.default.createIndex(defaultOptions.keys, content_1.default);\nfunction search(query) {\n    var options = __assign(__assign({}, defaultOptions), { minMatchCharLength: query.length > 1 ? 2 : 1 });\n    var fuse = new fuse_js_1.default(content_1.default, options, index);\n    return fuse.search(query).map(function (fuseResult) { return fuseResult.item; });\n}\nexports.default = search;\n\n\n//# sourceURL=webpack:///./src/search.ts?");
 
 /***/ })
 
