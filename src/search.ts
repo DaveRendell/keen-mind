@@ -17,5 +17,5 @@ export default function search(query: string): SearchResult[] {
     minMatchCharLength: query.length > 1 ? 2 : 1
   }
   const fuse = new Fuse(content, options, index)
-  return fuse.search(query).map(fuseResult => fuseResult.item)
+  return fuse.search(query, { limit: 25 }).map(fuseResult => fuseResult.item)
 }
