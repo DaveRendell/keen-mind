@@ -46,13 +46,21 @@ strong {
   text-align: center;
   padding: 2em;
 
+<<<<<<< 35c5a357c309c5a54bb1658a27c5b9f657b07cb6
   @include break(max-width, 25em, 40em);
+=======
+  @include break(max-width, 20rem, 40rem);
+>>>>>>> Add basic styling
 }
 
 main {
   margin: 0 auto;
 
+<<<<<<< 35c5a357c309c5a54bb1658a27c5b9f657b07cb6
   @include break(max-width, 40em, 60em);
+=======
+  @include break(max-width, 40rem, 60rem);
+>>>>>>> Add basic styling
 }
 
 // utility
@@ -68,7 +76,11 @@ main {
 .search-bar {
   background: $back-highlight;
   font-size: xx-large;
+<<<<<<< 35c5a357c309c5a54bb1658a27c5b9f657b07cb6
   padding: 0.25em 0.5em;
+=======
+  padding: 0.5rem 1rem;
+>>>>>>> Add basic styling
   border-radius: 9999px;
   border: 4px solid $top-color;
   border-bottom-color: $bottom-color;
@@ -76,9 +88,15 @@ main {
   display: flex;
 
   > input {
+<<<<<<< 35c5a357c309c5a54bb1658a27c5b9f657b07cb6
     margin-left: 0.5em;
     border-radius: 0.5em;
     min-width: 4em;
+=======
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    min-width: 4rem;
+>>>>>>> Add basic styling
     display: block;
     flex-grow: 1;
     flex-shrink: 1;
