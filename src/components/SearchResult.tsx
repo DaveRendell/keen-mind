@@ -8,34 +8,25 @@ interface SearchResultProps {
   isFirst: boolean
 }
 
-export default function(
-  { 
-    searchResult: {
-      title,
-      content,
-      breadcrumbs
-    },
-    isFirst
-  }: SearchResultProps
-) {
+export default function ({
+  searchResult: { title, content, breadcrumbs },
+  isFirst,
+}: SearchResultProps) {
   return (
     <div className="search-result">
-      { isFirst ? null : <hr/> }
-      <div className="breadcrumb">
-        {
-          breadcrumbs.map((breadcrumb, idx) => {
-            return (<span>
+      {isFirst ? null : <hr />}
+      <div className="pad-top">
+        {breadcrumbs.map((breadcrumb, idx) => {
+          return (
+            <span key={idx}>
               <span>{idx > 0 ? " > " : null}</span>
-              <b>{breadcrumb}</b>
-            </span>)
-          })
-        }
+              <strong>{breadcrumb}</strong>
+            </span>
+          )
+        })}
       </div>
-      <h2>{ title }</h2>
-      <ReactMarkdown
-        plugins={[remarkGFM]}
-        children={content}
-      />
+      <h2>{title}</h2>
+      <ReactMarkdown plugins={[remarkGFM]} children={content} />
     </div>
   )
 }

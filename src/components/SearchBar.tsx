@@ -1,19 +1,15 @@
 import * as React from "react"
 
 interface SearchBarProps {
-  query: string,
+  query: string
   setQuery: (query: string) => void
 }
 
-export default function({query, setQuery}: SearchBarProps) {
-
+export default function ({ query, setQuery }: SearchBarProps) {
   return (
     <div className="search-bar">
-      <input 
-        value={query}
-        onChange={e => setQuery(e.target.value)}
-        autoFocus
-      />
+      <div className="sepia">🔍</div>
+      <input value={query} onChange={e => setQuery(e.target.value)} autoFocus />
     </div>
   )
 }
