@@ -1,3 +1,91 @@
+// Breakpoints
+$large: 80rem;
+
+// Palette
+$root: #D9A521;
+$bright: #D9CB2B;
+$deep: #D97416;
+$complement: #420BD9;
+// $countercomplement: #36B7D9;
+
+// Theme
+$background: #242228;
+$text: lighten($bright, 40%);
+$highlight: lighten($root, 30%);
+$primary: $root;
+// $secondary: $countercomplement;
+$back-highlight: darken($complement, 25%);
+$top-color: $bright;
+$bottom-color: $root;
+
+body {
+  background: $background;
+  color: $text;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h1 {
-  color: red
+  color: $primary;
+}
+
+strong {
+  color: $highlight;
+}
+
+@mixin break($property, $mobile, $desktop) {
+  #{$property}: $mobile;
+
+  @media(min-width: $large) {
+    #{$property}: $desktop;
+  }
+}
+
+// composition
+.hero-column {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2em;
+
+  @include break(max-width, 25em, 40em);
+}
+
+main {
+  margin: 0 auto;
+
+  @include break(max-width, 40em, 60em);
+}
+
+// utility
+.sepia {
+  filter: contrast(0.5) sepia();
+}
+
+.pad-top {
+  padding-top: 1em;
+}
+
+// block
+.search-bar {
+  background: $back-highlight;
+  font-size: xx-large;
+  padding: 0.25em 0.5em;
+  border-radius: 9999px;
+  border: 4px solid $top-color;
+  border-bottom-color: $bottom-color;
+  border-right-color: $bottom-color;
+  display: flex;
+
+  > input {
+    margin-left: 0.5em;
+    border-radius: 0.5em;
+    min-width: 4em;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    font-size: xx-large;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: $text;
+  }
 }

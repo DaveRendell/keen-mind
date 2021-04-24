@@ -6,19 +6,17 @@ interface SearchResultsProps {
   query: string
 }
 
-
-export default function({query}: SearchResultsProps) {
+export default function ({ query }: SearchResultsProps) {
   const searchResults = search(query)
   return (
-    <div className="search-results">
-      {
-        searchResults.map((searchResult, idx) => 
-          <SearchResult
-            key={ idx }
-            searchResult={ searchResult }
-            isFirst={ idx == 0 }
-          />)
-      }
-    </div>
+    <main className="search-results">
+      {searchResults.map((searchResult, idx) => (
+        <SearchResult
+          key={idx}
+          searchResult={searchResult}
+          isFirst={idx == 0}
+        />
+      ))}
+    </main>
   )
 }
