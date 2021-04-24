@@ -64,6 +64,10 @@ main {
   padding-top: 1em;
 }
 
+.translucent {
+  opacity: 0.5;
+}
+
 // block
 .search-bar {
   background: $back-highlight;
@@ -88,4 +92,12 @@ main {
     background: transparent;
     color: $text;
   }
+}
+
+.key {
+  font-size: smaller;
+  font-weight: bold;
+  border: 1px solid $text;
+  width: 2em;
+  border-radius: 0.5em;
 }
